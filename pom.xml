@@ -55,15 +55,16 @@
             <plugin>
                 <groupId>com.microsoft.azure</groupId>
                 <artifactId>azure-webapp-maven-plugin</artifactId>
+                <version>1.6.0-SNAPSHOT</version>
                 <configuration>
-                    <deploymentType>jar</deploymentType>
+                    <deploymentType>zip</deploymentType>
                     <authentication>
                         <serverId>azure-auth</serverId>
                     </authentication>
-                    <resourceGroup>MSP-Portal-tst-Win-flanker</resourceGroup>
-                    <appName>MSP-Portal-TEST-flanker</appName>
+                    <resourceGroup>hanli-MSP-Portal-tst-Win-flanker</resourceGroup>
+                    <appName>hanli-MSP-Portal-TEST-flanker</appName>
                     <region>westeurope</region>
-                    <javaVersion>1.8</javaVersion>
+                    <javaVersion>11</javaVersion>
                     <appServicePlanName>MSP-AppServicePlan-PortalTST-Win-flanker</appServicePlanName>
                     <stopAppDuringDeployment>true</stopAppDuringDeployment>
                     <resources>
